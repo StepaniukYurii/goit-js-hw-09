@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers2.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers2.js","sources":["../src/js/2-form.js"],"sourcesContent":["const formData = { email: '', message: '' };\nconst form = document.querySelector('.feedback-form');\nconst texterya = form.elements.message;\nconst localStorageKey = 'message';\n"],"names":["form"],"mappings":"oCACA,MAAMA,EAAO,SAAS,cAAc,gBAAgB,EACnCA,EAAK,SAAS"}
