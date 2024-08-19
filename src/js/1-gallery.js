@@ -1,5 +1,6 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -65,6 +66,7 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
+
 const gallery = document.querySelector('.gallery');
 const fragment = document.createDocumentFragment();
 
