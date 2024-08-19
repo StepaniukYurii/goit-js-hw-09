@@ -86,12 +86,7 @@ images.forEach(({ preview, original, description }) => {
   link.setAttribute('href', original);
   img.setAttribute('src', preview);
   img.setAttribute('alt', description);
-  // img.setAttribute('data-source', original);
   img.setAttribute('width', 360);
-
-  link.addEventListener('click', event => {
-    event.preventDefault();
-  });
 });
 
 gallery.append(fragment);
@@ -102,18 +97,3 @@ lightbox = new SimpleLightbox('.gallery a', {
   close: true,
   loop: true,
 });
-
-// gallery.addEventListener('click', selectImage);
-
-// function selectImage(event) {
-//   if (event.target.tagName !== 'IMG') return;
-
-//   const originalImage = event.target.getAttribute('data-source');
-//   const altText = event.target.getAttribute('alt');
-
-//   const instance = basicLightbox.create(
-//     `<img src = '${originalImage}' alt = '${altText}'>`
-//   );
-
-//   instance.show();
-// }
